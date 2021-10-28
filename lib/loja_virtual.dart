@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_web_aula/widget/item_produto.dart';
 import 'package:flutter_web_aula/widget/mobile_app_bar.dart';
 import 'package:flutter_web_aula/widget/web.app_bar.dart';
 
@@ -29,42 +30,18 @@ class _LojaVirtualState extends State<LojaVirtual> {
               crossAxisSpacing: 8,
               mainAxisSpacing: 8,
               children: [
-                Container(
-                  color: Colors.orange,
-                ),
-                Container(
-                  color: Colors.yellow,
-                ),
-                Container(
-                  color: Colors.blue,
-                ),
-                Container(
-                  color: Colors.yellow,
-                ),
-                Container(
-                  color: Colors.orange,
-                ),
-                Container(
-                  color: Colors.yellow,
-                ),
-                Container(
-                  color: Colors.blue,
-                ),
-                Container(
-                  color: Colors.yellow,
-                ),
-                Container(
-                  color: Colors.orange,
-                ),
-                Container(
-                  color: Colors.yellow,
-                ),
-                Container(
-                  color: Colors.blue,
-                ),
-                Container(
-                  color: Colors.yellow,
-                ),
+                ItemProduto("Kit Multimídia", "2.500,00", "p1.jpg"),
+                ItemProduto("Pneu Goodyaer aro 16", "800,00", "p2.jpg"),
+                ItemProduto("Samsung 9", "4.100,00", "p3.jpg"),
+                ItemProduto("Samsung Edge", "2.150,00", "p4.jpg"),
+                ItemProduto("Galaxy 10", "6.200,00", "p5.jpg"),
+                ItemProduto("Iphone 10", "1.900,00", "p6.jpg"),
+                ItemProduto("Kit Multimídia", "2.500,00", "p1.jpg"),
+                ItemProduto("Pneu Goodyaer aro 16", "800,00", "p2.jpg"),
+                ItemProduto("Samsung 9", "4.100,00", "p3.jpg"),
+                ItemProduto("Samsung Edge", "2.150,00", "p4.jpg"),
+                ItemProduto("Galaxy 10", "6.200,00", "p5.jpg"),
+                ItemProduto("Iphone 10", "1.900,00", "p6.jpg"),
               ]),
         ),
       );
