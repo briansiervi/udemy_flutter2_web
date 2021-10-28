@@ -22,7 +22,66 @@ class _LojaVirtualState extends State<LojaVirtual> {
                 child: MobileAppBar(), preferredSize: Size(largura, altura))
             : PreferredSize(
                 child: WebAppBar(), preferredSize: Size(largura, altura)),
+        body: Padding(
+          padding: EdgeInsets.all(16),
+          child: GridView.count(
+              crossAxisCount: _ajustarVisualizacao(largura),
+              crossAxisSpacing: 8,
+              mainAxisSpacing: 8,
+              children: [
+                Container(
+                  color: Colors.orange,
+                ),
+                Container(
+                  color: Colors.yellow,
+                ),
+                Container(
+                  color: Colors.blue,
+                ),
+                Container(
+                  color: Colors.yellow,
+                ),
+                Container(
+                  color: Colors.orange,
+                ),
+                Container(
+                  color: Colors.yellow,
+                ),
+                Container(
+                  color: Colors.blue,
+                ),
+                Container(
+                  color: Colors.yellow,
+                ),
+                Container(
+                  color: Colors.orange,
+                ),
+                Container(
+                  color: Colors.yellow,
+                ),
+                Container(
+                  color: Colors.blue,
+                ),
+                Container(
+                  color: Colors.yellow,
+                ),
+              ]),
+        ),
       );
     });
+  }
+
+  _ajustarVisualizacao(double larguraTela) {
+    int colunas = 2;
+
+    if (larguraTela <= 600) {
+      colunas = 2;
+    } else if (larguraTela <= 960) {
+      colunas = 4;
+    } else {
+      colunas = 6;
+    }
+
+    return colunas;
   }
 }
